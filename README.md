@@ -2,6 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
+
+## For adding sub project
+
+- ### Initial Setup (run for add new submodule in project only)
+
+  `git submodule add --name admin-dashboard https://github.com/Jayant0jha/admin-dashboard.git projects/admin-dashboard`
+
+- ### Everytime a new use clones the project, for recursively cloning the submodules
+    `git clone [repo URL from github] --recurse-submodules`
+
+- ### Update
+
+  - `sudo apt-get install -y jq`
+
+  - run `./submodule_update.sh`
+
+
+## Run admin-dashboard locally
+    ng serve --project admin-dashboard
+
+## Run workspace E-commerce app locally
+    ng serve
+
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
